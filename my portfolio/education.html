@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vanessa Che Ngum | Junior Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="education.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+   <nav class="navbar">
+    <a href="index.html" class="logo">
+        portfolio<span class="logo-dot">.</span><span class="cursor">_</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+<button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to light theme"
+    title="Switch to light theme">
+    ☼
+</button>
+</nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="about">
+            <div>
+                <h1>Ngum Vanessa Che</h1>
+                <div class="role"><span id="typed"></span><span class="cursor"></span></div>
+                <p class="bio">
+                    Motivated junior software developer eager to contribute to IT projects and grow through
+                    hands-on experience. I build and style websites, model systems with UML and DFD diagrams,
+                    and enjoy turning requirements into working software.
+                </p>
+                <div class="btns">
+                    <a class="btn" href="#contact">Get in touch</a>
+                    <a class="btn ghost" href="https://github.com/Vanessa02-hub" target="_blank" rel="noopener">View my
+                        GitHub</a>
+                </div>
+            </div>
+
+
+            <div class="photo-wrap">
+                <div class="frame" id="frame" tabindex="0" role="button"
+                    aria-label="Profile photo. Click to choose a different photo">
+                    <div class="inner">
+                        <img id="photo" src="vanessa.jpeg" alt="Portrait of Vanessa Che Ngum">
+
+                    </div>
+                    <div class="tag">Junior Software Developer</div>
+
+                </div>
+                <input type="file" id="file" accept="image/*">
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p class="lead">My school results and the core IT topics I have studied and applied in projects.</p>
+
+            <div class="edu-grid">
+                <div class="glass card">
+                    <h3>Technical Skills</h3>
+                    <div class="meta">Software Development · 2025</div>
+                    <div class="subjects" id="subjects"></div>
+                </div>
+
+                <div class="glass card">
+                    <h3>IT Coursework &amp; Practice</h3>
+                    <div class="meta">What I have learned and applied</div>
+                    <ul class="studied">
+                        <li><b>Data communication:</b> how information flows across networks.</li>
+                        <li><b>Web development:</b> built and styled websites, applying design and coding fundamentals.
+                        </li>
+                        <li><b>Programming fundamentals:</b> structured problem-solving and logical thinking.</li>
+                        <li><b>Database Management Systems:</b> data storage, queries and relational models.</li>
+                        <li><b>Systems analysis &amp; design:</b> evaluating requirements and creating workflow models.
+                        </li>
+                        <li><b>Introductory AI:</b> awareness of algorithms and their applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="education-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">MY JOURNEY</p>
+                <h1>Education & Development</h1>
+                <p>Learning today, building tomorrow.</p>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="education-card">
+                <h2>System Development</h2>
+                <span class="status">Currently Studying</span>
+
+                <h3>Relevant Coursework</h3>
+                <div class="tags">
+                    <span>Programming</span>
+                    <span>Web Development</span>
+                    <span>Database Management</span>
+                    <span>Systems Analysis</span>
+                </div>
+            </div>
+
+            <!-- TECHNICAL SKILLS -->
+            <div class="content-section">
+                <h2>Technical Skills</h2>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>C++</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>SQL</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="--progress: 55%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="content-section">
+                <h2>Academic Projects</h2>
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <h3>BMI Calculator</h3>
+                        <p>
+                            Calculates Body Mass Index and displays
+                            BMI categories using programming logic.
+                        </p>
+                        <span class="project-tech">C++</span>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Banking System</h3>
+                        <p>
+                            A programming project demonstrating
+                            banking operations and problem-solving.
+                        </p>
+                        <span class="project-tech">Java . Database</span>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Hotel Reservation System</h3>
+                        <p>
+                            An application for managing hotel
+                            reservations and guest information.
+                        </p>
+                        <span class="project-tech">Java Swing · In Progress</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LEARNING GOALS -->
+            <div class="content-section">
+                <h2>Learning Goals</h2>
+
+                <div class="goal-card">
+                    <h3>01. Improve Java Programming</h3>
+                    <p>
+                        Strengthen object-oriented programming
+                        and application development skills.
+                    </p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>02. Advance Web Development</h3>
+                    <p>
+                        Build responsive and interactive websites.
+                    </p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>03. Build Complete Applications</h3>
+                    <p>
+                        Combine programming, databases and
+                        problem-solving in practical projects.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="strengths">
+            <h2>Professional strengths</h2>
+            <p class="lead">What I bring to a team.</p>
+            <div class="chips">
+                <span class="chip">Problem solving &amp; analytical thinking</span>
+                <span class="chip">Written &amp; verbal communication</span>
+                <span class="chip">Teamwork &amp; adaptability</span>
+                <span class="chip">Time management &amp; organisation</span>
+                <span class="chip">Critical thinking</span>
+                <span class="chip">Quick learner</span>
+                <span class="chip">Detail-oriented</span>
+            </div>
+        </section>
+        <br>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="lead">Open to junior developer opportunities and collaboration.</p>
+            <div class="contact">
+                <a class="glass"
+                    href="mailto:Chevanessa2674@gmail.com"><small>Email</small><span>Chevanessa2674@gmail.com</span></a>
+                <a class="glass" href="tel:+27734335386"><small>Phone</small><span>+27 734 335 386</span></a>
+                <a class="glass" href="https://github.com/Vanessa02-hub" target="_blank"
+                    rel="noopener"><small>GitHub</small><span>github.com/Vanessa02-hub</span></a>
+                <a class="glass" href="https://www.linkedin.com/in/vanessa-che-7532b7385" target="_blank"
+                    rel="noopener"><small>LinkedIn</small><span>linkedin.com/in/vanessa-che-7532b7385</span></a>
+                <div class="glass" style="padding:18px 20px"><small
+                        style="color:var(--muted);font-size:.72rem">Location</small><span
+                        style="font-size:.85rem">Auckland Park, Johannesburg</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; <span id="yr"></span> Ngum Vanessa Che</footer>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

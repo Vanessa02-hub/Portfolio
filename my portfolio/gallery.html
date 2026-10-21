@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Vanessa Che Ngum</title>
+    <meta name="description"
+        content="Explore Vanessa's software development, web development, database and UI design projects.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="gallery.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <canvas id="nebula" aria-hidden="true"></canvas>
+    <div class="page-glow" aria-hidden="true"></div>
+
+
+    <header class="site-header">
+       <nav class="navbar">
+    <a href="index.html" class="logo">
+        portfolio<span class="logo-dot">.</span><span class="cursor">_</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+   <button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to light theme"
+    title="Switch to light theme">
+    ☼
+</button>
+</nav>
+    </header>
+
+    <main>
+        ]
+        <section class="gallery-hero">
+            <p class="eyebrow"><span></span> MY WORKSPACE</p>
+
+            <h1>
+                Creative <span class="gradient-text">Gallery</span>
+            </h1>
+
+            <p class="hero-description">
+                A collection of projects built with care, creativity and code.
+                Explore my journey through web development, programming,
+                databases and user interface design.
+            </p>
+
+            <div class="hero-line" aria-hidden="true"></div>
+        </section>
+
+
+        <section class="gallery-section" aria-label="Project gallery">
+            <div class="gallery-toolbar">
+                <div>
+                    <p class="section-label">PROJECT ARCHIVE</p>
+                    <h2>Things I've <span>Built</span></h2>
+                </div>
+
+                <p class="project-count">
+                    <span id="visible-count">10</span> projects
+                </p>
+            </div>
+
+            <div class="filter-buttons" role="group" aria-label="Filter projects">
+                <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+                    All Projects
+                </button>
+
+                <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">
+                    Web Applications
+                </button>
+
+                <button class="filter-btn" type="button" data-filter="database" aria-pressed="false">
+                    Database Designs
+                </button>
+
+                <button class="filter-btn" type="button" data-filter="ui" aria-pressed="false">
+                    UI Design
+                </button>
+            </div>
+
+            <!--library management system-->
+            <div class="gallery-grid" id="gallery-grid">
+
+
+                <article class="project-card" data-category="database">
+                    <div class="project-preview library-preview">
+                        <div class="preview-topbar">
+                            <span class="window-dots"><i></i><i></i><i></i></span>
+                            <span>LIBRARY SYSTEM</span>
+                        </div>
+
+                        <div class="library-layout">
+                            <div class="library-sidebar">
+                                <span class="sidebar-logo">L.</span>
+                                <span class="sidebar-item selected">#</span>
+                                <span class="sidebar-item">+</span>
+                                <span class="sidebar-item">○</span>
+                            </div>
+
+                            <div class="library-content">
+                                <span class="mini-label">OVERVIEW</span>
+                                <h3>Library Dashboard</h3>
+
+                                <div class="library-stats">
+                                    <div><small>Books</small><strong>248</strong></div>
+                                    <div><small>Members</small><strong>86</strong></div>
+                                </div>
+
+                                <div class="book-row"><span>#</span>
+                                    <div><b>Book records</b><small>Manage collection</small></div>
+                                </div>
+                                <div class="book-row"><span>○</span>
+                                    <div><b>Members</b><small>Manage borrowers</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>01 / DATABASE</span><span class="status-dot">●</span></div>
+                        <h3>Library Management System</h3>
+                        <p>A system concept for organising books, member records and library activities.</p>
+                        <div class="tech-tags"><span>Java</span><span>SQL</span><span>Database</span></div>
+                    </div>
+                </article>
+
+                <!--pizza ordering system-->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview pizza-preview">
+                        <div class="pizza-topbar">
+                            <span class="pizza-brand">slice<span>.</span></span>
+                            <span class="pizza-menu">MENU &nbsp; ABOUT &nbsp; CART</span>
+                        </div>
+
+                        <div class="pizza-content">
+                            <div>
+                                <span class="pizza-label">FRESH FROM THE OVEN</span>
+                                <h3>Good food.<br>Good mood.</h3>
+                                <p>Made fresh, just for you.</p>
+                                <span class="pizza-button">ORDER NOW </span>
+                            </div>
+                            <div class="pizza-illustration" aria-hidden="true">
+                                <div class="pizza-circle">֎</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>02 / APPLICATION</span><span class="status-dot">●</span></div>
+                        <h3>Pizza Ordering System</h3>
+                        <p>A food-ordering project concept focused on menu selection and order management.</p>
+                        <div class="tech-tags"><span>C++</span><span>Logic</span><span>Ordering</span></div>
+                    </div>
+                </article>
+
+                <!--portfolio-->
+                <article class="project-card" data-category="ui">
+                    <div class="project-preview portfolio-preview">
+                        <div class="portfolio-top">
+                            <span class="portfolio-mark">V.</span>
+                            <span>HOME &nbsp; WORK &nbsp; CONTACT</span>
+                        </div>
+
+                        <div class="portfolio-main">
+                            <span class="portfolio-overline">HELLO, I'M VANESSA</span>
+                            <h3>Building digital<br><em>experiences.</em></h3>
+                            <p>Front-End Developer &amp; Designer</p>
+                            <span class="portfolio-pill">EXPLORE MY WORK </span>
+                        </div>
+
+                        <div class="portfolio-orb" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>03 / INTERFACE</span><span class="status-dot">●</span></div>
+                        <h3>Portfolio UI Design</h3>
+                        <p>A personal portfolio design exploring typography, layouts and a modern visual identity.</p>
+                        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+
+                <!---- Calculator UI -->
+                <article class="project-card" data-category="ui">
+                    <div class="project-preview calc-preview">
+                        <div class="calc-heading"><span>CalcUI</span><span>•••</span></div>
+                        <div class="calc-display"><small>YOUR TOTAL</small><strong>1,248<span>.00</span></strong></div>
+
+                        <div class="calc-buttons">
+                            <span>AC</span><span>±</span><span>%</span><span class="calc-op">÷</span>
+                            <span>7</span><span>8</span><span>9</span><span class="calc-op">×</span>
+                            <span>4</span><span>5</span><span>6</span><span class="calc-op">−</span>
+                            <span>1</span><span>2</span><span>3</span><span class="calc-op">+</span>
+                            <span class="zero">0</span><span>.</span><span class="calc-equals">=</span>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>04 / INTERFACE</span><span class="status-dot">●</span></div>
+                        <h3>CalcUI</h3>
+                        <p>A calculator interface concept with a clear layout and a modern visual style.</p>
+                        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+
+                <!-- BMI Calculator -->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview bmi-preview">
+                        <div class="bmi-header">
+                            <div><span class="bmi-icon">@</span><strong>bodymetrics</strong></div>
+                            <span class="bmi-menu">•••</span>
+                        </div>
+
+                        <div class="bmi-content">
+                            <span class="bmi-eyebrow">YOUR WELLNESS SNAPSHOT</span>
+                            <h3>BMI Calculator</h3>
+                            <p>Understand your body mass index.</p>
+
+                            <div class="bmi-result">
+                                <div>
+                                    <small>YOUR BMI</small>
+                                    <strong>22.5</strong>
+                                    <span>Example result</span>
+                                </div>
+                                <div class="bmi-gauge" aria-hidden="true">
+                                    <div class="bmi-gauge-inner">BMI</div>
+                                </div>
+                            </div>
+
+                            <div class="bmi-measures">
+                                <div><small>HEIGHT</small><strong>170 cm</strong></div>
+                                <div><small>WEIGHT</small><strong>65 kg</strong></div>
+                            </div>
+
+                            <div class="bmi-progress"><span></span></div>
+                            <div class="bmi-scale"><span>Low</span><span>Healthy</span><span>High</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>05 / APPLICATION</span><span class="status-dot">●</span></div>
+                        <h3>BMI Calculator</h3>
+                        <p>A calculator project for entering height and weight and calculating body mass index.</p>
+                        <div class="tech-tags"><span>C++</span><span>Loops</span><span>Arrays</span></div>
+                    </div>
+                </article>
+
+                <!--  Core Banking System -->
+                <article class="project-card" data-category="database">
+                    <div class="project-preview banking-preview">
+                        <div class="banking-top">
+                            <span class="banking-brand">NOVA<span> BANK</span></span>
+                            <span class="banking-menu">OVERVIEW &nbsp; ACCOUNTS</span>
+                        </div>
+
+                        <div class="banking-content">
+                            <small>ACCOUNT OVERVIEW</small>
+                            <p>Total balance</p>
+                            <h3>R 24,850<span>.00</span></h3>
+                            <div class="banking-chip">ACCOUNT •••• 2048</div>
+                        </div>
+
+                        <div class="banking-transactions">
+                            <span>RECENT ACTIVITY</span>
+                            <div><i>+</i><b>Transfer</b><strong>- R 450</strong></div>
+                            <div><i>-</i><b>Deposit</b><strong>+ R 1,200</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>06 / DATABASE</span><span class="status-dot">●</span></div>
+                        <h3>Core Banking System</h3>
+                        <p>A banking system project exploring account records and basic banking operations.</p>
+                        <div class="tech-tags"><span>Java</span><span>ArrayList</span><span>Database</span></div>
+                    </div>
+                </article>
+
+                <!-- Clinic Management System -->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview clinic-preview">
+                        <div class="clinic-top"><span>✚ CAREPOINT</span><span>ADMIN PORTAL</span></div>
+                        <div class="clinic-body">
+                            <span class="clinic-label">CLINIC OVERVIEW</span>
+                            <h3>Good morning!</h3>
+                            <p>Here's your clinic summary.</p>
+
+                            <div class="clinic-stats">
+                                <div><span>Patients</span><strong>124</strong></div>
+                                <div><span>Appointments</span><strong>18</strong></div>
+                            </div>
+
+                            <div class="clinic-appointment">
+                                <span class="clinic-avatar">JD</span>
+                                <div><b>Patient appointment</b><small>Today · 10:30 AM</small></div>
+                                <span class="clinic-check">√</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>07 / APPLICATION</span><span class="status-dot">●</span></div>
+                        <h3>Clinic Management System</h3>
+                        <p>A system concept for organising patient information and clinic appointments.</p>
+                        <div class="tech-tags"><span>Java</span><span>Database</span><span>Records</span></div>
+                    </div>
+                </article>
+
+                <!-- Number Guessing Game -->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview guessing-preview">
+                        <div class="game-top"><span>MINI GAME / 001</span><span>JAVA</span></div>
+                        <div class="game-content">
+                            <span class="game-emoji">۞</span>
+                            <h3>Guess the Number</h3>
+                            <p>Can you find the secret number?</p>
+                            <div class="guess-slots"><span>?</span><span>?</span><span>?</span></div>
+                            <span class="game-hint">HINT: IT'S BETWEEN 1-100</span>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>08 / GAME</span><span class="status-dot">●</span></div>
+                        <h3>Number Guessing Game</h3>
+                        <p>A small programming game that practises logic, conditions and user input.</p>
+                        <div class="tech-tags"><span>Java</span><span>Logic</span><span>Loops</span></div>
+                    </div>
+                </article>
+
+                <!-- Treasure Hunt -->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview treasure-preview">
+                        <div class="treasure-top"><span>✦ TREASUREHUNT</span><span>LEVEL 01</span></div>
+                        <div class="treasure-map">
+                            <span class="map-point point-one">✦</span>
+                            <span class="map-point point-two">✧</span>
+                            <span class="map-point point-three">✦</span>
+                            <span class="map-path">♪ ♪ ♪</span>
+                            <span class="treasure-chest">₽</span>
+                        </div>
+                        <div class="treasure-bottom"><span>FOLLOW THE CLUES</span><span>???</span></div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>09 / GAME</span><span class="status-dot">●</span></div>
+                        <h3>TreasureHunt</h3>
+                        <p>A Java game concept built around clues, choices and finding hidden treasure.</p>
+                        <div class="tech-tags"><span>Java</span><span>Conditions</span><span>Logic</span></div>
+                    </div>
+                </article>
+
+                <!-- Data Validation System -->
+                <article class="project-card" data-category="web">
+                    <div class="project-preview validation-preview">
+                        <div class="validation-top">
+                            <span>VALIDATE<span class="validation-dot">.</span> SECURE<span
+                                    class="validation-dot">.</span> MANAGE</span>
+                            <span>. LIVE</span>
+                        </div>
+
+                        <div class="validation-content">
+                            <span class="validation-label">DATA ENTRY</span>
+                            <h3>Validation Form</h3>
+
+                            <div class="validation-field">
+                                <span>Full name</span><strong>Vanessa Che</strong><i>√</i>
+                            </div>
+                            <div class="validation-field">
+                                <span>Email address</span><strong>vanessa@email.com</strong><i>√</i>
+                            </div>
+                            <div class="validation-field">
+                                <span>ID number</span><strong>●●●●●●●●●●</strong><i>√</i>
+                            </div>
+
+                            <div class="validation-success">√ &nbsp; All fields validated</div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta"><span>10 / APPLICATION</span><span class="status-dot">●</span></div>
+                        <h3>Data Validation System</h3>
+                        <p>A Java Swing project focused on validating form entries and managing user data.</p>
+                        <div class="tech-tags"><span>Java Swing</span><span>Validation</span><span>Forms</span></div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-projects" id="no-projects" hidden>
+                No projects in this category yet. Try another filter.
+            </p>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="gallery-cta">
+            <p class="eyebrow"><span></span> WHAT'S NEXT?</p>
+            <h2>Let's build something <span class="gradient-text">meaningful.</span></h2>
+            <p>Have an idea or want to work together? I'd love to hear from you.</p>
+            <a href="contact.html" class="cta-button">Let's Talk <span></span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">portfolio<span>.</span></a>
+        <p>Designed and built by Vanessa Che Ngum.</p>
+        <p class="copyright">&copy; 2026 Vanessa. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
